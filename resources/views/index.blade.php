@@ -3,6 +3,7 @@
 
 <head>
     <!-- Các thẻ meta, CSS và JavaScript chung -->
+    <script type="text/javascript" src="{{ asset('assets/js/jquery-3.7.0.min.js') }}"></script>
 </head>
 
 <body>
@@ -21,7 +22,6 @@
         @include('layout.footer')
     </footer>
 
-    <script type="text/javascript" src="{{ asset('assets/js/jquery-3.7.0.min.js') }}"></script>
 </body>
 
 </html>
