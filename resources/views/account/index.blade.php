@@ -75,7 +75,7 @@
 
 			$.ajax({
 				type: 'POST',
-				url: `{{ route('register.login') }}`,
+				url: `{{ route('account.register') }}`,
 				data: formData,
 				success: function(response) {
 					// Xử lý phản hồi thành công từ máy chủ
