@@ -22,7 +22,7 @@ class AccountController extends Controller
     }
 
     public function register(Request $request) {
-        dd($request->all());
+        // dd($request->all());
         $user = new User();
 
         $user->name = $request->name;
