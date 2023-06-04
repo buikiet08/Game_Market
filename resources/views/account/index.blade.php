@@ -1,5 +1,6 @@
+@extends('index')
+@section('content')
 <link rel="stylesheet" href="{{ asset('assets/css/account/style.css') }}">
-
 <h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
@@ -63,4 +64,6 @@
 </footer>
 
 <script type="text/javascript" src="{{ asset('assets/js/account/main.js') }}"></script>
+
+@endsection
 
