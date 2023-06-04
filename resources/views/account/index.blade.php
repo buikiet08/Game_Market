@@ -25,6 +25,7 @@
 	</div>
 	<div class="form-container sign-in-container">
 		<form >
+			@csrf
 			<h1>Sign in</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
