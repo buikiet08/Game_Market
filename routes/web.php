@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Account\AccountController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,10 +20,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::group(
-    [
-        
-    ],
+    [],
     function ($route) {
+
+        $route->get('/', [HomeController::class, 'index'])->name('home');
+
 
         //account
         Route::group([
@@ -31,6 +33,5 @@ Route::group(
             $router->get('/', [AccountController::class, 'index'])->name("account.login");
             $router->post('/register', [AccountController::class, 'register'])->name("register.login");
         });
-
     }
 );
