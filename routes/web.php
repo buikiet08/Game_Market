@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Account\AccountController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::group(
+    [
+        
+    ],
+    function ($route) {
+
+        //account
+        Route::group([
+            'prefix' => 'account'
+        ], function ($router) {
+            $router->get('/', [AccountController::class, 'index'])->name("account.login");
+        });
+    }
+);
