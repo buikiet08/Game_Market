@@ -149,12 +149,12 @@
 
                     <div class="box-account-title d-flex justify-content-between c-mb-18">
                         <div class="fw-700 fz-20 lh-28 title-color">Tài khoản</div>
-                        <img src="/assets/frontend/theme_5/image/nam/profile_close.svg" alt="" class="close-login-popup c-mr-12">
+                        <img src="{{ asset('assets/image/layout/profile_close.svg') }}" alt="" class="close-login-popup c-mr-12">
                     </div>
                     <div class="c-pr-16 account-logined-content box-account_nologined" style="display: none;">
                         <div class="login-popup brs-12 c-p-16 d-flex m-auto justify-content-between">
                             <div class="m-auto ">
-                                <img src="/assets/frontend/theme_5/image/nam/login-robot.png" alt="">
+                                <img src="{{ asset('assets/image/layout/login-robot.png') }}" alt="">
                             </div>
 
                             <div class="login-popup_content c-ml-24">
@@ -171,7 +171,7 @@
 
                         <div class="sidebar">
                             <div class="sidebar-section d-flex brs-12 c-mb-16 sidebar-user-profile">
-                                <div class="sidebar-section-avt brs-100 c-mr-12"><img class="brs-100" src="/assets/frontend/theme_5/image/nam/avatar.png" alt=""></div>
+                                <div class="sidebar-section-avt brs-100 c-mr-12"><img class="brs-100" src="{{ asset('assets/image/layout/avatar.png') }}" alt=""></div>
                                 <div class="sidebar-section-info">
                                     <div class="sidebar-section-title c-mb-4 fz-15 fw-500">Phùng Thành ...</div>
                                     <div class="sidebar-section-info-text c-mb-4 fz-13 fw-500 sidebar-user-balance">Số dư: <span>0</span></div>
@@ -187,9 +187,9 @@
                             <div class="sidebar-section brs-12 c-mb-16">
                                 <div class="sidebar-item ">
                                     <a href="/thong-tin" class="d-block align-items-center d-flex">
-                                        <div class="icon-sidebar" style="--path:url(https://cdn.upanh.info/storage/upload/images/Library-SVG/Theme%203.0/menu%20profile/thongtintaikhoan.svg)"></div>
+                                        <div class="icon-sidebar" style="--path:url({{ asset('assets/image/layout/thongtintaikhoan.svg') }})"></div>
                                         <p class="sidebar-item-text fw-400 fz-12 mb-0">Thông tin tài khoản</p>
-                                        <img src="/assets/frontend/theme_5/image/svg/sidebar_arrow_right.svg" alt="">
+                                        <img src="{{ asset('assets/image/layout/sidebar_arrow_right.svg') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="sidebar-item-partition d-flex c-my-8"></div>
@@ -197,7 +197,7 @@
                                     <a href="/changepassword" class="d-block align-items-center d-flex">
                                         <div class="icon-sidebar" style="--path:url(https://cdn.upanh.info/storage/upload/images/Library-SVG/Theme%203.0/menu%20profile/doimatkhau.svg)"></div>
                                         <p class="sidebar-item-text fw-400 fz-12 mb-0">Đổi mật khẩu</p>
-                                        <img src="/assets/frontend/theme_5/image/svg/sidebar_arrow_right.svg" alt="">
+                                        <img src="{{ asset('assets/image/layout/sidebar_arrow_right.svg') }}" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -226,7 +226,7 @@
                                     <a href="/lich-su-giao-dich" class="d-block align-items-center d-flex">
                                         <div class="icon-sidebar" style="--path:url(https://cdn.upanh.info/storage/upload/images/Library-SVG/Theme%203.0/menu%20profile/biendongsodu.svg)"></div>
                                         <p class="sidebar-item-text fw-400 fz-12 mb-0">Biến động số dư</p>
-                                        <img src="/assets/frontend/theme_5/image/svg/sidebar_arrow_right.svg" alt="">
+                                        <img src="{{ asset('assets/image/layout/sidebar_arrow_right.svg') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="sidebar-item-partition d-flex c-my-8"></div>
@@ -234,7 +234,7 @@
                                     <a href="/dich-vu-da-mua" class="d-block align-items-center d-flex">
                                         <div class="icon-sidebar" style="--path:url()"></div>
                                         <p class="sidebar-item-text fw-400 fz-12 mb-0">Dịch vụ đã mua</p>
-                                        <img src="/assets/frontend/theme_5/image/svg/sidebar_arrow_right.svg" alt="">
+                                        <img src="{{ asset('assets/image/layout/sidebar_arrow_right.svg') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="sidebar-item-partition d-flex c-my-8"></div>
@@ -242,7 +242,7 @@
                                     <a href="/lich-su-mua-account" class="d-block align-items-center d-flex">
                                         <div class="icon-sidebar" style="--path:url(https://cdn.upanh.info/storage/upload/images/Library-SVG/Theme%203.0/menu%20profile/taikhoandamua.svg)"></div>
                                         <p class="sidebar-item-text fw-400 fz-12 mb-0">Tài khoản đã mua</p>
-                                        <img src="/assets/frontend/theme_5/image/svg/sidebar_arrow_right.svg" alt="">
+                                        <img src="{{ asset('assets/image/layout/sidebar_arrow_right.svg') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="sidebar-item-partition d-flex c-my-8"></div>
@@ -250,7 +250,7 @@
                                     <a href="/minigame-log" class="d-block align-items-center d-flex">
                                         <div class="icon-sidebar" style="--path:url(https://cdn.upanh.info/storage/upload/images/Library-SVG/Theme%203.0/menu%20profile/lichsuquaythuong.svg)"></div>
                                         <p class="sidebar-item-text fw-400 fz-12 mb-0">Lịch sử chơi minigame</p>
-                                        <img src="/assets/frontend/theme_5/image/svg/sidebar_arrow_right.svg" alt="">
+                                        <img src="{{ asset('assets/image/layout/sidebar_arrow_right.svg') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="sidebar-item-partition d-flex c-my-8"></div>
@@ -258,7 +258,7 @@
                                     <a href="/lich-su-nap-the" class="d-block align-items-center d-flex">
                                         <div class="icon-sidebar" style="--path:url(https://cdn.upanh.info/storage/upload/images/Library-SVG/Theme%203.0/menu%20profile/lichsunapthe.svg)"></div>
                                         <p class="sidebar-item-text fw-400 fz-12 mb-0">Lịch sử nạp thẻ</p>
-                                        <img src="/assets/frontend/theme_5/image/svg/sidebar_arrow_right.svg" alt="">
+                                        <img src="{{ asset('assets/image/layout/sidebar_arrow_right.svg') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="sidebar-item-partition d-flex c-my-8"></div>
@@ -266,13 +266,13 @@
                                     <a href="/lich-su-atm-tu-dong" class="d-block align-items-center d-flex">
                                         <div class="icon-sidebar" style="--path:url(https://cdn.upanh.info/storage/upload/images/Library-SVG/Theme%203.0/menu%20profile/napatmtudong.svg)"></div>
                                         <p class="sidebar-item-text fw-400 fz-12 mb-0">Lịch sử nạp ATM tự động</p>
-                                        <img src="/assets/frontend/theme_5/image/svg/sidebar_arrow_right.svg" alt="">
+                                        <img src="{{ asset('assets/image/layout/sidebar_arrow_right.svg') }}" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="sidebar-section brs-12 c-mb-16">
                                 <div class="sidebar-item log-out-button"><a href="javascript:void(0);" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="d-block align-items-center d-flex">
-                                        <div class="sidebar-item-icon brs-8 c-p-8 c-mr-12"><img src="/assets/frontend/theme_5/image/nam/log-out.svg" alt="" style="width: 24px;height: 24px"></div>
+                                        <div class="sidebar-item-icon brs-8 c-p-8 c-mr-12"><img src="https://shoplq.vn/assets/frontend/theme_5/image/nam/log-out.svg" alt="" style="width: 24px;height: 24px"></div>
                                         <p class="sidebar-item-text fw-400 fz-12 mb-0">Đăng xuất</p>
                                     </a></div>
                             </div>

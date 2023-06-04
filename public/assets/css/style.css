@@ -1,4 +1,108 @@
-@media (min-width: 1200px){
+:root {
+    --fw-bold: 700;
+    --fw-medium: 500;
+    --fw-regular: 400;
+    --primary-color: #0E3EDA;
+    --bg-color: white;
+    --primary-hover-color: #0B2FA6;
+    --primary-focus-color: #082480;
+    --primary-disable-color: #D0D7F3;
+    --secondary-color: #F473B9;
+    --secondary-hover-color: #CC609B;
+    --secondary-focus-color: #A64E7D;
+    --border-default-color: #E4E5F0;
+    --border-hover-color: #A7ABC3;
+    --global-font: 'Roboto';
+    --focus-color: #1990FF;
+    --text-color: #434657;
+    --text-title-color: #1B1D29;
+    --text-blur: #A7ABC3;
+    --invalid-color: #DA4343;
+    --input-disable-color: #F3F3F7;
+    --button-disable-color: #DCDEE9;
+    --button-text-disable-color: #A7ABC3;
+    --ghost-border-default-color: #BCBFD6;
+    --ghost-border-hover-color: #82869E;
+    --w-ghost-hover-color: #F8F8FC;
+    --w-ghost-focus-color: #F3F3F7;
+    --text-link-default-color: #82869E;
+    --text-link-hover-color: #1473CC;
+    --status-success-color: #30CD60;
+    --status-yellow-color: #FFA940;
+    --status-red-color: #F83142;
+    --status-sd-success-color: #F5FDF7;
+    --status-sd-danger-color: #FDF6F6;
+    --status-sd-yellow-color: #FFFBF5;
+    --status-sd-red-color: #FFF5F6;
+    --status-sd-blue-color: #E8F4FF;
+    --status-outline-red-color: #DF2C3B;
+    --disable-switch-color: #E8EBF9;
+    --box-shadow-default: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --th-table-color: #FBFBFD;
+    --filter-text-color: invert(25%) sepia(17%) saturate(560%) hue-rotate(194deg) brightness(97%) contrast(90%);
+    --filter-primary-color: invert(22%) sepia(98%) saturate(2861%) hue-rotate(225deg) brightness(81%) contrast(115%);
+    --filter-focus-color: invert(48%) sepia(75%) saturate(2985%) hue-rotate(190deg) brightness(98%) contrast(107%);
+    --filter-link-default-color: invert(53%) sepia(19%) saturate(394%) hue-rotate(194deg) brightness(98%) contrast(80%);
+    --filter-link-hover-color: invert(33%) sepia(74%) saturate(1284%) hue-rotate(185deg) brightness(95%) contrast(96%);
+    --filter-button-disable-color: invert(84%) sepia(6%) saturate(259%) hue-rotate(193deg) brightness(106%) contrast(92%);
+}
+
+body {
+    font-family: var(--global-font), sans-serif;
+    font-style: normal;
+    color: var(--text-color);
+    line-height: 20px;
+    font-size: 13px;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+button {
+    all: unset;
+}
+input[type=search].has-submit ~ button[type=submit]:hover {
+    background-color: var(--primary-hover-color);
+}
+.btn.primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.btn {
+    border-radius: 0.5rem;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.btn.primary:hover, .btn.secondary:hover {
+    background-color: var(--primary-hover-color);
+    color: #fff;
+}
+p, span, a {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--text-color);
+}
+a:hover {
+    text-decoration: none;
+}
+input[type=search]:focus {
+    outline: none;
+    color: var(--text-color);
+    border: 1px solid var(--border-default-color);
+    padding: 9px 3px 9px 11px;
+}
+.form-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+@media (min-width: 1200px) {
     .c-container {
         max-width: 1264px;
     }
