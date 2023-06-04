@@ -4,6 +4,8 @@
 <head>
     <!-- Các thẻ meta, CSS và JavaScript chung -->
     <script type="text/javascript" src="{{ asset('assets/js/jquery-3.7.0.min.js') }}"></script>
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body>
@@ -21,7 +23,6 @@
     <footer>
         @include('layout.footer')
     </footer>
-
 </body>
 
 </html>
