@@ -9,7 +9,7 @@
 				{{Session::get('success')}}
 			</div>
 		@endif
-		<form action="{{route('register.login')}}" method="POST">
+		<form id="register-form">
 			<h1>Create Account</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -64,6 +64,30 @@
 </footer>
 
 <script type="text/javascript" src="{{ asset('assets/js/account/main.js') }}"></script>
+<script>
+	$(document).ready(function() {
+    $('#register-form').on('submit', function(e) {
+        e.preventDefault();
+        var formData = $(this).serialize();
+        
+        $.ajax({
+            type: 'POST',
+            url: '{{ route('register.login') }}',
+            data: formData,
+            success: function(response) {
+                // Xử lý phản hồi thành công từ máy chủ
+                console.log(response);
+                // Điều hướng hoặc hiển thị thông báo thành công tùy ý
+            },
+            error: function(response) {
+                // Xử lý lỗi từ máy chủ
+                console.log(response.responseJSON);
+                // Hiển thị thông báo lỗi hoặc các trường lỗi tùy ý
+            }
+        });
+    });
+});
 
+</script>
 @endsection
 
