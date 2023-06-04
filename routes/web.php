@@ -29,6 +29,8 @@ Route::group(
             'prefix' => 'account'
         ], function ($router) {
             $router->get('/', [AccountController::class, 'index'])->name("account.login");
+            $router->post('/', [AccountController::class, 'register'])->name("register.login");
         });
+
     }
 );
