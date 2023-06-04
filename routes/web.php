@@ -28,7 +28,7 @@ Route::group(
         Route::group([
             'prefix' => 'account'
         ], function ($router) {
-            $router->get('/', [AccountController::class, 'index'])->name("account.login");
+            $router->get('/', [AccountController::class, 'index']);
         });
     }
 );
